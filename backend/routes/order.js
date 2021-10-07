@@ -7,6 +7,7 @@ const {updateInventory}=require('../controllers/product');
 
 const {getOrderById,getOrder,createOrder}=require('../controllers/order');
 
+
 router.param("userId",getUserByID);
 router.param("orderId",getOrderById);
 
