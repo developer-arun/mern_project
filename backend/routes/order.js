@@ -5,7 +5,8 @@ const {isAdmin,isAuthenticated,isSignedIn}=require('../controllers/auth');
 const {getUserByID,pushOrderInPurchaseList}=require("../controllers/user");
 const {updateInventory}=require('../controllers/product');
 
-const {getOrderById,getOrder}=require('../controllers/order');
+const {getOrderById,getOrder,createOrder}=require('../controllers/order');
+
 
 router.param("userId",getUserByID);
 router.param("orderId",getOrderById);
